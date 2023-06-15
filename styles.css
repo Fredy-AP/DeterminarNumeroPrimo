@@ -22,6 +22,11 @@ button{
 text-align:center;
 }
 
+input{
+text-align:center;
+}
+
+
 body {
     font-family: Arial, sans-serif;
 }
