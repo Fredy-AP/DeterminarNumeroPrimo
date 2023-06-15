@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>El proceso de determinar si un numero es primo,</h1>
+        <p>Como plantear el problema de determinar si un numero es primo, primero
+            se debe tener claro si solo si es divisible por si mismo y por la
+            unidad,lo que explica mejor si se plantea que al dividir el numero entre
+            todos, los numeros que hay entre el numero , y el numero solo
+            solo lo deven dividir exactamente (con residuo cero ), el uno y el mismo numero
+        </p>
+        <div>
+            <p>
+                <input type="text" id="pantalla" placeholder="Digita el Numero">
+                <input type="text" id="Resultado" placeholder="Resultado">
+            </p>
+            <article>
+                <button id="calcular">Calcular</button>
+                <button id="borrar">Borrar</button>
+            </article>
+        </div>
+        
+        <script>
+            // Función para determinar si un número es primo
+            function esPrimo(numero) {
+                if (numero <= 1) {
+                    return false;
+                }
+        
+                for (let i = 2; i <= Math.sqrt(numero); i++) {
+                    if (numero % i === 0) {
+                        return false;
+                    }
+                }
+        
+                return true;
+            }
+        
+            // Obtener referencias a los elementos del DOM
+            var pantallaInput = document.getElementById("pantalla");
+            var resultadoInput = document.getElementById("Resultado");
+            var calcularBtn = document.getElementById("calcular");
+            var borrarBtn = document.getElementById("borrar");
+        
+            // Agregar un event listener al botón "Calcular"
+            calcularBtn.addEventListener("click", function () {
+                // Obtener el valor de la pantalla
+                var valorPantalla = pantallaInput.value;
+                var numero = parseInt(valorPantalla);
+        
+                // Verificar si el número es primo
+                if (esPrimo(numero)) {
+                    resultadoInput.value = "Es primo";
+                } else {
+                    resultadoInput.value = "No es primo";
+                }
+            });
+        
+            // Agregar un event listener al botón "Borrar"
+            borrarBtn.addEventListener("click", function () {
+                // Borrar los valores de los inputs
+                pantallaInput.value = "";
+                resultadoInput.value = "";
+            });
+        </script>
+   
+
+</body>
+
+</html>
