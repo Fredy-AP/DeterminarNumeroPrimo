@@ -15,9 +15,9 @@ h1 {
 }
 p  { 
     color:rgb(244, 243, 243);
-    text-align: justify ;
     font-size: 2rem;
-    width:100%;
+    text-align: justify;
+    width: 100%;
 }
 button{
 text-align:center;
