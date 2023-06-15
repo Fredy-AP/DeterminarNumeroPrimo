@@ -23,7 +23,7 @@ text-align:center;
 }
 
 input{
-display:gris;
+display:grid;
 text-align:center;
 margin:0 auto;
 }
