@@ -24,4 +24,46 @@ h1 {
 
 p {
     font-size: 2rem;
-    text-align: justify
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    padding: 10px;
+    font-size: 24px;
+    width: 250px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .input-field {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
