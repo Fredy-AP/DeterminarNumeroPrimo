@@ -53,6 +53,7 @@ body {
 
 #pantalla, #Resultado {
     width: 200px;
+    text-align: center;
 }
 
 #calcular, #borrar {
