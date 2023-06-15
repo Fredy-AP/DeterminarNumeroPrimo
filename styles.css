@@ -18,6 +18,8 @@ p  {
     font-size: 2rem;
     text-align: justify;
     width: 100%;
+    display: flex;
+     flex: 1;
 }
 button{
 text-align:center;
