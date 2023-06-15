@@ -18,7 +18,9 @@ p  {
     text-align: justify;
     font-size: 2rem;
 }
-
+button{
+text-align:Center;
+}
 
 body {
     font-family: Arial, sans-serif;
